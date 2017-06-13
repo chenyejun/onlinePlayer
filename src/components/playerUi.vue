@@ -110,11 +110,11 @@ export default {
           else
           { 
             /*需要延迟执行pause()，不然当切换歌曲后，点击第一次暂停会失效*/
-            this.pauseTimer=setInterval(()=>{
+            this.pauseTimer=setTimeout(()=>{
                this.audioObj.pause();
                if(this.songStartStop==false)
                {
-                  clearInterval(pauseTimer);
+                  clearInterval(this.pauseTimer);
                }
              },500);
             this.$store.dispatch('changeBtnClass',this.musicStop);
@@ -171,7 +171,7 @@ export default {
             this.$store.dispatch('changeStartStop',this.musicPlay);
 
             /*这里添加定时器的原因是，上面的changeSongIndex通过vuex改变歌曲索引需要一定的延时，所以才添加定时器，执行开关，不然需要双击才能播放音乐*/
-            this.changeSongTimer=setInterval(()=>{
+            this.changeSongTimer=setTimeout(()=>{
                 this.audioObj.play();
                 if(this.songStartStop==false)
                 {
