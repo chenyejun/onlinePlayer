@@ -1,11 +1,10 @@
-# play
+# player
 
 > vue-cli加vuex在线播放器
 
-## Build Setup
+## clone后进入目录
 
 ``` 
-git clone git@github.com:chenyejun/onlinePlayer.git
 npm stall 
 npm run dev
 ```
