@@ -114,7 +114,7 @@ export default {
                this.audioObj.pause();
                if(this.songStartStop==false)
                {
-                  clearInterval(this.pauseTimer);
+                  clearTimeout(this.pauseTimer);
                }
              },500);
             this.$store.dispatch('changeBtnClass',this.musicStop);
@@ -175,7 +175,7 @@ export default {
                 this.audioObj.play();
                 if(this.songStartStop==false)
                 {
-                    clearInterval(this.changeSongTimer);
+                    clearTimeout(this.changeSongTimer);
                 }
             },500);
       },

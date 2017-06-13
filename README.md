@@ -11,6 +11,6 @@ npm run dev
 ```
 
 ## 在线访问音乐播放器:
-http://orbps6iaj.bkt.clouddn.com/2017614succindex.html
+http://orbps6iaj.bkt.clouddn.com/2017614successindex.html
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
